@@ -1,0 +1,123 @@
+# PROPUESTA DE DISEÑO – PORTAFOLIO TIPO VISUAL STUDIO CODE
+
+## Descripción General
+
+Desarrollo de un portafolio web interactivo inspirado en la interfaz de Visual Studio Code, diseñado para presentar de forma innovadora la experiencia profesional, habilidades técnicas, proyectos y trayectoria del desarrollador.
+
+La plataforma simulará un entorno de programación real, permitiendo a los visitantes navegar por las distintas secciones como si estuvieran explorando archivos dentro de un proyecto de software.
+
+## Objetivo
+
+Crear una experiencia visual moderna y profesional que represente la identidad de un desarrollador Full Stack, destacando conocimientos técnicos mediante una interfaz familiar para reclutadores y profesionales del sector tecnológico.
+
+## Características Principales
+
+### Barra Superior
+
+* Nombre del proyecto.
+* Indicador de entorno de desarrollo.
+* Botones de minimizar, maximizar y cerrar.
+
+### Explorador de Archivos (Sidebar)
+
+Estructura simulada:
+
+PORTAFOLIO/
+├── README.md
+├── SOBRE_MI.js
+├── EXPERIENCIA.json
+├── HABILIDADES.ts
+├── PROYECTOS/
+│   ├── sistema-inventario.php
+│   ├── sistema-cotizaciones.php
+│   ├── infinitydev.jsx
+│   └── ecommerce-react.jsx
+├── CERTIFICADOS.pdf
+└── CONTACTO.env
+
+Cada archivo abrirá una pestaña con información correspondiente.
+
+### Área de Editor
+
+* Visualización de contenido con resaltado de sintaxis.
+* Efecto de escritura animada.
+* Numeración de líneas.
+* Cursor parpadeante.
+
+### Sección README.md
+
+Presentación inicial:
+
+# Hola, soy Darlin Saldarriaga 👋
+
+Ingeniero de Sistemas
+Full Stack Developer
+Apasionado por la ciberseguridad y el desarrollo web.
+
+### Experiencia Profesional
+
+Visualización en formato JSON.
+
+### Habilidades
+
+Visualización mediante código TypeScript.
+
+### Proyectos
+
+Tarjetas interactivas con:
+
+* Capturas.
+* Tecnologías utilizadas.
+* Enlace a GitHub.
+* Demo en vivo.
+
+### Terminal Integrada
+
+Comandos disponibles:
+
+help
+about
+skills
+projects
+experience
+contact
+linkedin
+github
+clear
+
+### Tema Visual
+
+Basado en VS Code Dark Theme:
+
+Background: #1E1E1E
+Sidebar: #252526
+Panel: #2D2D30
+Blue Accent: #007ACC
+Text: #D4D4D4
+
+### Funcionalidades Adicionales
+
+* Animaciones suaves.
+* Diseño responsive.
+* Modo claro/oscuro.
+* Integración con GitHub.
+* Descarga de CV.
+* Efecto Matrix opcional en pantalla de inicio.
+
+## Tecnologías
+
+Frontend:
+
+* React.js
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+
+Despliegue:
+
+* Vercel
+* GitHub Pages
+
+## Resultado Esperado
+
+Un portafolio único y profesional que represente visualmente el entorno de trabajo de un desarrollador, generando mayor impacto en reclutadores, clientes y empresas tecnológicas.

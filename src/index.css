@@ -1,40 +1,70 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #3b82f6;
-  --color-primary-light: #60a5fa;
-  --color-primary-dark: #1d4ed8;
-  --color-dark-bg: #0a0a0f;
-  --color-dark-card: #12121a;
-  --color-dark-border: #1e1e2e;
-  --color-text-muted: #9ca3af;
+  --color-vsc-bg: #1E1E1E;
+  --color-vsc-sidebar: #252526;
+  --color-vsc-panel: #2D2D30;
+  --color-vsc-blue: #007ACC;
+  --color-vsc-text: #D4D4D4;
+  --color-vsc-text-secondary: #969696;
+  --color-vsc-border: #3C3C3C;
+  --color-vsc-activity: #333333;
+  --color-vsc-title: #3C3C3C;
+  --color-vsc-status: #007ACC;
+  --color-vsc-tab-active: #1E1E1E;
+  --color-vsc-tab-inactive: #2D2D2D;
+  --color-vsc-line-number: #858585;
+  --color-vsc-hover: #2A2D2E;
+  --color-vsc-selection: #264F78;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
+* {
   margin: 0;
-  background-color: #0a0a0f;
-  color: #f3f4f6;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #1E1E1E;
+  color: #D4D4D4;
+  font-family: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0f;
+  background: #1E1E1E;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3b82f6;
-  border-radius: 3px;
+  background: #424242;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+::-webkit-scrollbar-corner {
+  background: #1E1E1E;
 }
 
 ::selection {
-  background: #3b82f6;
-  color: #fff;
+  background: #264F78;
+  color: #D4D4D4;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
 }
